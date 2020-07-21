@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test thread-count="5" name="Testchrome">
+  <parameter name="urlnode" value="http://106.220.181.94:4444/wd/node"></parameter>
+  <parameter name="browser" value="chrome"></parameter>
+  <classes>
+  <class name= "test.Demogrid"/>
+  </classes>
+  </test> <!-- Test --><test thread-count="5" name="Test">
+  <parameter name="urlnode" value="http://192.168.1.102:4444/wd/node"></parameter>
+  <parameter name="browser" value="chrome"></parameter>
+  <classes>
+  <class name= "test.Demogrid"/>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

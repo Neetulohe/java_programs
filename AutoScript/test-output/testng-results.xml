@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+    <line>
+      <![CDATA[Functional testing]]>
+    </line>
+    <line>
+      <![CDATA[Integration testing and Regression testing]]>
+    </line>
+    <line>
+      <![CDATA[System testing and Regression testing]]>
+    </line>
+    <line>
+      <![CDATA[Adhoc testing]]>
+    </line>
+    <line>
+      <![CDATA[Smoke testing and Functional testing]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="738" started-at="2020-07-19T14:27:16 IST" finished-at="2020-07-19T14:27:17 IST">
+    <groups>
+      <group name="sys testing">
+        <method signature="TestGroups.Regression()[pri:0, instance:test.TestGroups@7d907bac]" name="Regression" class="test.TestGroups"/>
+      </group> <!-- sys testing -->
+      <group name="Adtesting">
+        <method signature="TestGroups.adhocTesting()[pri:0, instance:test.TestGroups@7d907bac]" name="adhocTesting" class="test.TestGroups"/>
+      </group> <!-- Adtesting -->
+      <group name="IntTest">
+        <method signature="TestGroups.IntegrationTesting()[pri:0, instance:test.TestGroups@7d907bac]" name="IntegrationTesting" class="test.TestGroups"/>
+      </group> <!-- IntTest -->
+      <group name="smk testing">
+        <method signature="TestGroups.smokeTesting()[pri:0, instance:test.TestGroups@7d907bac]" name="smokeTesting" class="test.TestGroups"/>
+      </group> <!-- smk testing -->
+      <group name="RegTest">
+        <method signature="TestGroups.IntegrationTesting()[pri:0, instance:test.TestGroups@7d907bac]" name="IntegrationTesting" class="test.TestGroups"/>
+        <method signature="TestGroups.Regression()[pri:0, instance:test.TestGroups@7d907bac]" name="Regression" class="test.TestGroups"/>
+      </group> <!-- RegTest -->
+      <group name="Funtest">
+        <method signature="TestGroups.FunctionalTesting()[pri:0, instance:test.TestGroups@7d907bac]" name="FunctionalTesting" class="test.TestGroups"/>
+        <method signature="TestGroups.smokeTesting()[pri:0, instance:test.TestGroups@7d907bac]" name="smokeTesting" class="test.TestGroups"/>
+      </group> <!-- Funtest -->
+    </groups>
+    <test name="Default test" duration-ms="738" started-at="2020-07-19T14:27:16 IST" finished-at="2020-07-19T14:27:17 IST">
+      <class name="test.TestGroups">
+        <test-method status="PASS" signature="FunctionalTesting()[pri:0, instance:test.TestGroups@7d907bac]" name="FunctionalTesting" duration-ms="33" started-at="2020-07-19T14:27:17 IST" finished-at="2020-07-19T14:27:17 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Functional testing]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- FunctionalTesting -->
+        <test-method status="PASS" signature="IntegrationTesting()[pri:0, instance:test.TestGroups@7d907bac]" name="IntegrationTesting" duration-ms="1" started-at="2020-07-19T14:27:17 IST" finished-at="2020-07-19T14:27:17 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Integration testing and Regression testing]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- IntegrationTesting -->
+        <test-method status="PASS" signature="Regression()[pri:0, instance:test.TestGroups@7d907bac]" name="Regression" duration-ms="3" started-at="2020-07-19T14:27:17 IST" finished-at="2020-07-19T14:27:17 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[System testing and Regression testing]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Regression -->
+        <test-method status="PASS" signature="adhocTesting()[pri:0, instance:test.TestGroups@7d907bac]" name="adhocTesting" duration-ms="1" started-at="2020-07-19T14:27:17 IST" finished-at="2020-07-19T14:27:17 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Adhoc testing]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- adhocTesting -->
+        <test-method status="PASS" signature="smokeTesting()[pri:0, instance:test.TestGroups@7d907bac]" name="smokeTesting" duration-ms="1" started-at="2020-07-19T14:27:17 IST" finished-at="2020-07-19T14:27:17 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Smoke testing and Functional testing]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- smokeTesting -->
+      </class> <!-- test.TestGroups -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,8 +1,10 @@
 package qsp;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -14,39 +16,13 @@ public class Browser {
 		public static void main(String[] args) throws InterruptedException {
 			// TODO Auto-generated method stub
 	    WebDriver driver = new ChromeDriver();
-	    driver.get("http://www.google.com");
+	    driver.get("https://www.amazon.in/");
 	    driver.manage().window().maximize();
-//	    System.out.println(driver.getTitle());
-//	    System.out.println(driver.getPageSource());
-//	    System.out.println(driver.getCurrentUrl());
-//	    driver.quit();
-//
-//	    WebDriver driver1 = new ChromeDriver();
-//	    Thread.sleep(4000);
-//	    driver1.navigate().to("http://www.naukri.com");
-//	    driver1.close();
-
-         driver.findElement(By.partialLinkText("How Search works")).click();
-        driver.navigate().back();
-	    driver.findElement(By.cssSelector("input[class='gLFyf gsfi']")).sendKeys("India Monuments");
-	    driver.findElement(By.cssSelector("input[class='gLFyf gsfi']")).sendKeys(Keys.ENTER);
-	    driver.findElement(By.cssSelector("a[title='India Gate']")).click();
-	    driver.findElement(By.cssSelector("a[href='https://en.wikipedia.org/wiki/India_Gate']")).click();
-	    driver.findElement(By.cssSelector("a[title='Past revisions of this page [alt-shift-h]']")).click();
-	    driver.findElement(By.cssSelector("a[title='User:HJ Mitchell']")).click();
-	    driver.findElement(By.cssSelector("a[title='Find background information on current events']")).click();
-	    driver.findElement(By.linkText("Sports events")).click();
-	    Thread.sleep(3000);
-	    driver.findElement(By.cssSelector("a[title='Visit a randomly selected article [alt-shift-x]']")).click();
-	    Thread.sleep(4000);
-	    driver.findElement(By.cssSelector("a[title='Discuss improvements to the content page [alt-shift-t]']")).click();
-	    driver.findElement(By.cssSelector("a[class='mw-wiki-logo']")).click();
-	   
-	    // Shortcuts of cssSelector
-	    driver.findElement(By.cssSelector("a[title$='Arts']")).click();
-	    driver.findElement(By.cssSelector("img[alt*='Lisa']")).click();
-	    Thread.sleep(5000);
-	    driver.findElement(By.cssSelector("a[class^='mw-mmv-stripe-button']")).click();
-	   
+	    JavascriptExecutor js=(JavascriptExecutor)driver;
+	    js.executeScript("scrollBy("+200+","+300+")");
+	    driver.findElement(By.xpath("//span[text()='Refrigerators']")).click();
+	    js.executeScript("scrollBy("+300+","+300+")");
+         String price = driver.findElement(By.xpath("//span[text()='Haier 181 L 2 Star Direct-Cool Single Door Refrigerator (HED-1812BKS-E, Black Brushline)']/ancestor::div[@class='sg-col-4-of-12 sg-col-8-of-16 sg-col-16-of-24 sg-col-12-of-20 sg-col-24-of-32 sg-col sg-col-28-of-36 sg-col-20-of-28']/descendant::span[@class='a-price-whole']")).getText();
+		System.out.println(price);
 		}
 }

@@ -1,5 +1,10 @@
 /.classpath
 /.project
+/qsppomtest/
+/test/
+/DataDriven.class
+/KeyDriven.class
+/frame/
 /popups/
 /qsp/
 /qspActions/
@@ -7,7 +12,3 @@
 /qspEncapsulationTest/
 /qspSelectclass/
 /qsppompage/
-/qsppomtest/
-/test/
-/frame/
-/DataDriven.class
